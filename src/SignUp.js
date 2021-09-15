@@ -91,8 +91,6 @@ export const SignUp = ({submitForm}) => {
                         onChange={handleChange}
                     />
                     {errors.password_c && <p>{errors.password_c}</p>}
-
-                    
                 </div>
                 <button className='form-input-btn' type='submit'>
                     Sign Up

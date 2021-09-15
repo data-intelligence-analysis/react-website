@@ -1,10 +1,12 @@
 .form-container {
-    margin: 100px auto;
-    width: 1100px;
+    margin: 10px auto;
+    margin-top: 2px auto;
+    margin-bottom: 2px auto;
+    width: 1100px auto;
     box-shadow: 0 5px 8px 0 #dec092, 0 7px 20px 0 #dec092;
     position: relative;
     border-radius: 10px;
-    height: 900px;
+    height: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -15,7 +17,7 @@
     right: 3%;
     font-size: 1.5rem;
     z-index: 1;
-    color: #fff;
+    color: #266041;
     cursor: pointer;
   }
   
@@ -39,14 +41,14 @@
     transform: translate(-50%, -50%);*/
   }
   
-  .form-img-2 {
+  /*.form-img-2 {
     width: 60%;
     height: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+  }*/
   
   .form-success {
     text-align: center;
@@ -81,7 +83,8 @@
     font-weight: 400;
     font-style: "";
     text-align: center;
-    width: 85%;
+    width: auto;
+    height: auto;
     margin-bottom: 0.1rem;
     color:#266041;
   }
@@ -104,8 +107,10 @@
     margin-bottom: 10px;
     margin-top: 15px;
     color:#6b473b;
-    justify-content: left;
-    margin-right: 8rem;
+    /*justify-content: left;*/
+    margin-left: 10rem auto;
+    position: left;
+    text-align: left;
   }
   .form-label-email {
     display: inline-block;

@@ -1,10 +1,7 @@
 .form-container2 {
   text-align: center;
-  /*background:#dec092;*/
-  /*margin: 50px auto;*/
-  background-position: center;
-  height: auto;
-  width: auto;
+  background-color:#dec092;
   position: relative;
-  
+  margin-bottom: 5px auto;
+  height: 10px auto;
 }
