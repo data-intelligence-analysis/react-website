@@ -2,11 +2,11 @@
     margin: 10px auto;
     margin-top: 2px auto;
     margin-bottom: 2px auto;
-    width: 1100px auto;
+    width: auto;
     box-shadow: 0 5px 8px 0 #dec092, 0 7px 20px 0 #dec092;
     position: relative;
     border-radius: 10px;
-    height: 1100px;
+    height: 900px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -85,13 +85,14 @@
     text-align: center;
     width: auto;
     height: auto;
-    margin-bottom: 0.1rem;
-    color:#266041;
+    margin-bottom: 1px;
+    color:#008037;
   }
   
   .form-inputs {
     margin-bottom: 0.1rem;
     width: 80%;
+    position: relative;
   }
   
   .form-inputs p {
@@ -101,53 +102,59 @@
     color: #f00e0e;
   }
   
-  .form-label-fn {
+  .form-label {
     display: inline-block;
     font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1px;
+    margin-top: 11px;
+    color:#008037;
+    /*justify-content: left;*/
+    position: relative;
+    text-align: left;
+  }
+  /*.form-label-email {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: left;
     margin-bottom: 10px;
     margin-top: 15px;
     color:#6b473b;
-    /*justify-content: left;*/
-    margin-left: 10rem auto;
-    position: left;
-    text-align: left;
-  }
-  .form-label-email {
-    display: inline-block;
-    font-size: 1rem;
-    margin-bottom: 10px;  
-    margin-top: 15px;
-    color:#6b473b;
     justify-content: left;
-    margin-right: 10rem;
+    position: relative;
+    text-align: left;
   }
   .form-label-db {
     display: inline-block;
     font-size: 1rem;
+    text-align: left;
     margin-bottom: 10px;
     margin-top: 15px;
     color:#6b473b;
-    justify-content: left;
-    margin-right: 7.4rem;
+    position: relative;
+    text-align: left;
+    
   }
   .form-label-ps {
     display: inline-block;
     font-size: 1rem;
+    text-align: left;
     margin-bottom: 10px;
-    margin-top:15px;
+    margin-top: 15px;
     color:#6b473b;
-    justify-content: left;
-    margin-right: 6.3rem;
+    position: relative;
+    text-align: left;
   }
   .form-label-pc {
     display: inline-block;
     font-size: 1rem;
+    text-align: left;
     margin-bottom: 10px;
     margin-top: 15px;
     color:#6b473b;
-    justify-content: left;
-    margin-right: 7.5rem;
-  }
+    position: relative;
+    text-align: left;
+  }*/
   .user-input{
     width:70%;
     height: 45px;
@@ -156,27 +163,32 @@
     background: #ffffff;
     border:3px #6b473b;
     border-style: solid;
+    padding: 5px;
     /*outline-style: solid;
-    outline-color: #6b473b;
+    outlin3333333333333333e-color: #6b473b;
     outline-width: thin;*/
     color:#266041;
     font-size: 0.9rem;
-    text-align:center;
+    text-align: justify;
+    justify-content: space-between;
+    
   }
   
-  .form-input {
+  .form-inputs {
     display: block;
-    padding-left: 15px;
+    height: auto;
+    width: 80%;
+    /*padding-left: 15px;
     outline: none;
     border-radius: 2px;
-    height: 40px;
-    width: 100%;
-    border: none;
+    
+    border: none;*/
   }
   
   .form-input::placeholder {
     color: #595959;
     font-size: 12px;
+    
   }
   
   .form-input-btn {
@@ -218,4 +230,28 @@
     text-decoration: none;
     color: #008037;
     font-weight: 600;
+  }
+
+  .form-input-signup {
+    font-size: 1rem;
+    font-family: "Courier New";
+    font-style: "";
+    font-weight: 400;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    color: #008037;
+    width: 80%;
+    text-align: center;
+  }
+
+  .form-input-continue {
+    font-size: 1rem;
+    font-family: "Courier New";
+    font-style: "";
+    font-weight: 400;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    color: #008037;
+    width: 80%;
+    text-align: center;
   }

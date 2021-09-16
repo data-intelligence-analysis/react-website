@@ -3,19 +3,22 @@ import React from 'react';
 import useForm from './useForm';
 import validate from './Validate';
 import './Form.css';
+import { Link } from 'react-router-dom';
+
 
 export const SignUp = ({submitForm}) => {
+
     const {handleChange, values, handleSubmit, errors} = useForm(submitForm,validate);
     return (
-        <div className="form-content-right">
             <form className="form" onSubmit={handleSubmit}>
                 <h1>Create New Account</h1>
                 <span className='form-input-login'>
-                    Already Registered?  <a href='#'>Login</a>
+                    Already Registered? <Link to="/Login">Login</Link>
+                    
                 </span>
                 <br/>
                 <div className="form-inputs"> 
-                    <label htmlForm="fullname" className='form-label-fn'>
+                    <label htmlForm="fullname" className='form-label'>
                         Please enter your name
                     </label><br/>
                     <input
@@ -30,7 +33,7 @@ export const SignUp = ({submitForm}) => {
                     {errors.fullname && <p>{errors.fullname}</p>} 
                 </div>
                 <div className="form-inputs"> 
-                    <label htmlForm="email" className='form-label-email'>
+                    <label htmlForm="email" className='form-label'>
                         Please enter email
                     </label><br/>
                     <input
@@ -46,7 +49,7 @@ export const SignUp = ({submitForm}) => {
                     {/*<label htmlFrom=*/}
                 </div>
                 <div className="form-inputs"> 
-                    <label htmlForm="DOB" className='form-label-db'>
+                    <label htmlForm="DOB" className='form-label'>
                         Please enter date of birth
                     </label><br/>
                     <input
@@ -62,7 +65,7 @@ export const SignUp = ({submitForm}) => {
                     {/*<label htmlFrom=*/}
                 </div>
                 <div className="form-inputs"> 
-                    <label htmlForm="password" className='form-label-ps'>
+                    <label htmlForm="password" className='form-label'>
                         Please enter your password
                     </label><br/>
                     <input
@@ -78,7 +81,7 @@ export const SignUp = ({submitForm}) => {
                     {/*<label htmlFrom=*/}
                 </div>
                 <div className="form-inputs"> 
-                    <label htmlForm="password2" className='form-label-pc'>
+                    <label htmlForm="password2" className='form-label'>
                         Confirm your password
                     </label><br/>
                     <input
@@ -95,9 +98,8 @@ export const SignUp = ({submitForm}) => {
                 <button className='form-input-btn' type='submit'>
                     Sign Up
                 </button>
-                
             </form>
-        </div>
     );
         
 };
+export default SignUp
