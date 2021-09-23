@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="form-container2">  
         <div className="App">
-          <Form />  
-          
+          <Form />       
         </div>
     </div>
     

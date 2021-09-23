@@ -7,16 +7,17 @@ export const Login = ({submitForm}) => {
     const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
     return (
         <div className="login-form-content-right">
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="form-login" onSubmit={handleSubmit}>
                 <h1>Login</h1>
                 <span className="form-input-continue">
                     Sign in to Continue
                 </span>
-                
                 <div className="form-inputs">
-                    <label htmlForm="fullname" className='form-label'>
-                        Please enter Email 
-                    </label><br />
+                    <div class="col-25">
+                        <label htmlForm="fullname" className='form-label'>
+                            Please enter Email 
+                        </label>
+                    </div>
                     <input
                         id='fullname'
                         type='text'
@@ -26,12 +27,14 @@ export const Login = ({submitForm}) => {
                         values={values.fullname}
                         onChange={handleChange}
                     />
-                    {errors.fullname && <p>{errors.fullname}</p>}
+                    {errors.email && <p>{errors.email}</p>}
                 </div>
                 <div className="form-inputs">
-                    <label htmlForm="email" className='form-label'>
-                        Please enter Password
-                    </label><br />
+                    <div class="col-25">
+                        <label htmlForm="email" className='form-label'>
+                            Please enter Password
+                        </label>
+                    </div>
                     <input
                         id='email'
                         type='text'
@@ -41,14 +44,14 @@ export const Login = ({submitForm}) => {
                         value={values.email}
                         onChange={handleChange}
                     />
-                    {/*{errors.email && <p>{errors.email}</p>}*/}
-                    {/*<label htmlFrom=*/}
+                    {errors.password && <p>{errors.password}</p>}
+                    
                 </div>
                 <button className='form-input-btn' type='submit'>
                     Login
                 </button>
                 <span className="form-input-signup">
-                    Don't have an account? Join us <Link to="/">here</Link>
+                    Don't have an account? Join us <Link to="/SignUp">here</Link>
                 </span>
             </form>
 
