@@ -16,10 +16,13 @@ const StyledButton = withStyles({
         background: "#7b4f2f",
         color: "#ebe9d6",
         transform: "translate(20px,0)",
+        /*Second Nav*/
+        marginRight: "5px",
+        marginLeft: "2px",
         //boxShadow: "6px 6px 0 0 #c7d8ed",
         transition: "background .3s,border-color .3s,color .3s",
         "&:hover": {
-            backgroundColor:  "#266041" //darker green
+            backgroundColor:  "#735240" //darker green
           },
     },
     label: {

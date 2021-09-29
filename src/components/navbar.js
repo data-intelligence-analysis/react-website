@@ -52,7 +52,7 @@ function NavBar() {
             <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>
                 <Link to="/">
                     <img src = {pfp} className={classes.logo} height="150" />
-                </Link> 
+                </Link>
                 <Typography variant="h6" className={classes.menuItem}>
                     About
                 </Typography>

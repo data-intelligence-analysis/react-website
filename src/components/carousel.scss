@@ -1,0 +1,52 @@
+.carousel{
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; //to prevent overflow of the image
+    background: none;
+    i{
+        font-size: 2vw; //edit the navaigation arrows font size and increase the  size of the view width
+    }
+}
+.slide{
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    transition: .5s;
+    overflow: hidden; ///to prevent overflow of the image on the side
+}
+
+//extender for navigation button
+%btn-styles{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); //goes down 50%
+    width: 8%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    transition: 0.6s;
+    &:hover {
+        background: #dec0928c;
+        cursor: pointer; //edit cursor
+        i{
+            color: whitesmoke; //edit the navaigation arrows font size
+        }
+    }
+}
+
+#moveLeft{
+    left: 0;
+    @extend %btn-styles;
+}
+    
+#moveRight{
+    right: 0;
+    @extend %btn-styles;
+}

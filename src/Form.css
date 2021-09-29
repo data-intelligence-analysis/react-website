@@ -1,13 +1,13 @@
 .form-container {
     margin: 10px auto;
-    margin-top: auto;
+    margin-top: 0;
     margin-bottom: 30px auto;
-    width: 100% auto;
+    width: 100%;
     box-shadow: 0 5px 8px 0 #dec092, 0 7px 20px 0 #dec092;
     position: relative;
     border-radius: 10px;
     display: grid;
-    height: 900px;
+    min-height: 100vh;
     /*fr is the unit size for spliting grid into columns*/
     grid-template-columns: repeat(2, 1fr);
   }

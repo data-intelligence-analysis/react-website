@@ -1,9 +1,19 @@
+/* css reset -> remove default margin to set the page for full width to prevent the 
+body element to overflow*/
+*  {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
     text-align: center;
-    background-color: #dec092;/*cream color*/
+    min-height: 100vh;
+    max-width: 100%;
+    background-color:#f8efd6;  /*#ebd1ab;/*cream color #f8efd6 #dec092 #ebe9d6*/
     display: grid;
+    margin: 0 auto;
     position: relative;
-    height: 1800px auto;
+    
     
 }
   

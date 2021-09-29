@@ -8,10 +8,10 @@ import {NavLink as Link } from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 
 //z-index - ensure navbar is above majority of the content
-//Add styles for <Nav> tag //lighter color - #eedbbe, #dec092
+//Add styles for <Nav> tag //lighter color - #eedbbe, #5a8951 //dark green -#266041 , //lighter bage -  #f8efd6 //darker bage - #dec092 
 export const Nav = styled.nav`
-    background: #5a8951;
-    height: 60px;
+    background: transparent;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vw - 1000px)/2);
@@ -20,8 +20,9 @@ export const Nav = styled.nav`
 
 //Styles for the NavLink tag and activeStyles
 export const NavLink = styled.nav`
-    color: #fff;
+    color: #266041;
     display: flex;
+    
     align-items: center;
     text-decoration: none;
     padding 0 1rem;
@@ -34,7 +35,7 @@ export const NavLink = styled.nav`
 //Using hamburger icons (display: none - should not show in desktop version)
 export const Bars = styled(FaBars)`
     display: none;
-    color: #fff;
+    color: #7b4f2f;
 
     @media screen and (max-width: 760px){
         display: block;
@@ -49,10 +50,15 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -30px;
+    /*margin-right: -24px;*/
 
+    /*Second Nav*/
+    margin-right: 18px;
     @media screen and (max-width: 760px){
         display: none;
+    }
+    @media screen and (max-width: 1000px){
+
     }
 `
 

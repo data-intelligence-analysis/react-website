@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import SignUp from './SignUp'
 import Login from './Login'
-
+import SignUp from './SignUp'
 import './Form.css'
 
 export const Form = () => {
@@ -21,17 +20,18 @@ export const Form = () => {
                         <img src="images/content-left.png" alt="leaf-left" className="form-leaf-img"/>
                     </div>
                     {/*<div className="form-content-right">*/}
-                        {/*Using the exact path would only render the path that has been defined*/}
-                    <Route exact path="/SignUp" render={() => (   
-                        <SignUp />
-                    )}/>
+                    {/*Using the exact path would only render the path that has been defined*/}
                     {/*Behaves like a switch statement renders the first route that matches the path*/}
                     <Switch>
-                        <Route exact path="/SignIn">
+                        <Route exact path="/SignIn" render={() => (   
                             <Login />
-                        </Route>
+                        )}/>
+                        <Route exact path="/SignUp" render={() => ( 
+                            <SignUp />
+                        )}/>
                     </Switch>
-                        {/*<Route exact path='/' component={Home}/>*/}
+                    
+                    {/*<Route exact path='/' component={Home}/>*/}
                     {/*</div>*/}
 
                 </Router>
@@ -43,9 +43,6 @@ export const Form = () => {
                 ) : (<Success />)
 
                 }*/}
-                
-
-                    
             </div>
         </>
     )

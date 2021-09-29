@@ -10,7 +10,7 @@ import {makeStyles, createTheme} from '@material-ui/core/styles'
 const styles = makeStyles({
     footerColor:{
       width: '100%',
-      background: "#92b787",
+      background: "#266041",
       color: "#fff"
     },
 })
@@ -26,7 +26,7 @@ export default function Footer() {
             <BottomNavigation
                 className= {classes.footerColor}
                 value = {value}
-                //showLabels
+                showLabels
                 onChange = {(event, newValue) => setValue(newValue)}
             >
                 <BottomNavigationAction label="Instagram" value="explore" icon={<InstagramIcon style={{fill: "#C13584"}}/>} />
