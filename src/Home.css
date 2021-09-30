@@ -3,6 +3,7 @@ body element to overflow*/
 *  {margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .App {
@@ -13,8 +14,8 @@ body element to overflow*/
     display: grid;
     margin: 0 auto;
     position: relative;
-    
-    
+    font-family: 'Monteserrat', sans-serif;
+      
 }
   
   

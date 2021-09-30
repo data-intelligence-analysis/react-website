@@ -7,7 +7,7 @@
     position: relative;
     border-radius: 10px;
     display: grid;
-    min-height: 100vh;
+    min-height: 150vh;
     /*fr is the unit size for spliting grid into columns*/
     grid-template-columns: repeat(2, 1fr);
   }
@@ -63,18 +63,20 @@
   border-radius: 0 10px 10px 0;
   position: relative;
   background: #ffffff;
+  
 }
 
 .form {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .form-login {
   position: absolute;
@@ -88,9 +90,9 @@
   align-items: center;
 }
 .form h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 590;
   text-align: center;
   width: auto;
   height: auto;
@@ -98,10 +100,20 @@
   margin-bottom: 1px;
   color:#008037;
 }
-
+.form-login h1 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  font-weight: 590;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  margin-bottom: 1px;
+  color:#008037;
+}
 .form-inputs {
   display: inline-block;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.5rem;
   height: 100%;
   width: 90%;
   position: relative;
@@ -116,15 +128,14 @@
 
 .form-inputs p {
   font-size: 0.8rem;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 0.8rem;
   color: #f00e0e;
 }
 
 .form-label {
   display: inline-block;
   font-size: 1rem;
-  padding: 9px 9px 9px 0;
+  padding: 5px 5px 5px 22px;
   color:#008037;
   
 }
@@ -167,14 +178,14 @@
 }
 .user-input{
   width: 90%;
-  height: 25px;
+  height: 6vh;
   margin-top: 5px;
   border-radius: 9px;
   background: #ffffff;
   border:3px solid #6b473b;
-  padding: 12px;
+  padding: 20px;
   color:#266041;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-align: left;
   justify-content:space-evenly;
   resize: vertical;
@@ -184,19 +195,7 @@
   color: #595959;
   font-size: 10px;
 }
-.form-input-btn {
-  width: 75%;
-  height: 45px;
-  margin-top: 30px;
-  border-radius: 2px;
-  background: #dec092;
-  border-radius: 7px;
-  outline: none;
-  border: none;
-  color:#008037;
-  font-size: 1rem;
-  position: center;
-}
+
 
 .form-input-btn:hover {
   cursor: pointer;
@@ -229,11 +228,10 @@
   font-size: 1rem;
   font-family: "Courier New";
   font-style: "";
-  font-weight: 400;
-  /*margin-top: 3px;
-  margin-bottom: 25px;*/
+  font-weight: 600;
   color: #008037;
-  width: 80% auto;
+  padding: 1.5rem; 
+  width: 70%;
   height: auto;
   text-align: center;
 }
@@ -249,7 +247,18 @@
   width: 80%;
   text-align: center;
 }
-
+.form-input-btn {
+  width: 80%;
+  height: 40px;
+  margin-top: 15px;
+  background: #dec092;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  color:#008037;
+  font-size: 1rem;
+  position: center;
+}
 /* Responsive layout - when the screen is less than 
 600px wide, make the two columns stack on top of each 
 other instead of next to each other */
@@ -259,17 +268,34 @@ other instead of next to each other */
     height: 45%;
     margin-top:1.5px;
   }
-}
-@media screen and (max-width: 600px){
   .form{
-    height: 60%;
+    height: 10%;
   }
-}
-@media screen and (max-width: 400px) {
-  .form{
-    height: 30%;
+  .form-input-btn{
+    min-height: 40px;
+    max-width: 140px;
+    margin-top: 10px;
+    width: 60%;
+    align-items: center;
+    border-radius: 4px;
+    transform: translate(10%, 0%);
   }
+  .user-input{
+    transform: translate(9%, 0%);
+    font-size: 0.8rem;
+    padding: 20px 10px 20px 4px;
+    width: 145px;
+  }
+  /*.form-label{
+    
+  }*/
+  
+  
+
+
+  
 }
+
 /*@media screen and (max-width: 800px) {
   .col-25, .col-26, .col-27, .col-28, .col-29, .col-75,.form-input-btn,.user-input{
     width: 85%;
